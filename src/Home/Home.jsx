@@ -6,11 +6,9 @@ import Banner from './../home-components/banner/Banner';
 const Home = () => {
   return (
     <>
-      <div className="bg-[#127958] ">
+      <div>
         <Navbar></Navbar>
         <Banner></Banner>
-      </div>
-      <div className="bg-[#172227]">
         <StudentTable></StudentTable>
         <Footer></Footer>
       </div>

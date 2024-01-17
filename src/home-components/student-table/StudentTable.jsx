@@ -9,137 +9,161 @@ const StudentTable = () => {
       .then(res => res.json())
       .then(data => setStudentData(data));
   }, []);
-  console.log(studentData);
-  return (
-    <div>
-      <div className="text-center mx-auto">
-        <h2 className="sm:text-4xl md:text-5xl font-bold text-[#127958] pt-10">
-          Students <span className="text-white">of the year</span>
-        </h2>
 
-        <form>
-          <input
-            className="rounded-full h-10 my-8 p-4 w-1/4 min-w-2/4"
-            placeholder="Search by Student"
-            type="text"
-          />
-        </form>
+  return (
+    <section className="py-24 lg:pt-[120px] lg:pb-28 bg-[#172227] font-[Inter] text-white">
+      <div className="container">
+        <div className="mb-16 flex flex-col items-center">
+          <h2 className="text-3xl lg:text-[40px] mb-9 font-bold">
+            <span className="text-[#00CC8C]">Students</span> of the Year
+          </h2>
+          {/* <!-- Search Box --> */}
+          <form>
+            <div className="flex">
+              <div className="relative overflow-hidden text-gray-50 md:min-w-[380px] lg:min-w-[440px] rounded-[63px]">
+                <input
+                  type="search"
+                  id="search-dropdown"
+                  className="z-20 block w-full bg-white px-4 py-2.5 pr-10 focus:outline-none rounded-[63px] placeholder:text-neutral-400 text-neutral-800"
+                  placeholder="Search by Student "
+                  required
+                />
+                <button
+                  type="submit"
+                  className="absolute right-0 inline-flex items-center justify-center w-10 top-0 h-full rounded-e-lg text-neutral-800"
+                >
+                  <svg
+                    className="h-4 w-4"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                    />
+                  </svg>
+                  <span className="sr-only">Search</span>
+                </button>
+              </div>
+            </div>
+          </form>
+          {/* <!-- Search Box Ends --> */}
+        </div>
+        <div className="max-w-[848px] mx-auto overflow-auto">
+          <table className="w-full">
+            <thead>
+              <tr className="border-b border-[#FFFFFF0D]">
+                <th className="uppercase p-5 text-sm md:text-xl font-semibold md:min-w-[110px] text-left">
+                  ID
+                </th>
+                <th className="p-5 text-sm md:text-xl font-semibold text-left">
+                  Name
+                </th>
+                <th className="p-5 text-sm md:text-xl font-semibold">Scores</th>
+                <th className="p-5 text-sm md:text-xl font-semibold">
+                  Percentage
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {/* <!-- class one --> */}
+              <tr className="bg-white/5">
+                <td className="p-5 text-sm md:text-xl" colSpan="4">
+                  Class One
+                </td>
+              </tr>
+              {studentData?.class1?.map(student => (
+                <tr key={student.id} className="border-b border-[#7ECEB529]">
+                  <td className="p-5 text-sm md:text-xl">{student.id}</td>
+                  <td className="p-5 text-sm md:text-xl">
+                    <div className="flex space-x-3 items-center">
+                      <img
+                        className="w-8 h-8 rounded-full"
+                        src={student.image}
+                        width="32"
+                        height="32"
+                        alt="John Smith"
+                      />
+                      <span className="whitespace-nowrap">{student.name}</span>
+                    </div>
+                  </td>
+                  <td className="p-5 text-sm md:text-xl text-center">
+                    {student.score}
+                  </td>
+                  <td className="p-5 text-sm md:text-xl text-center">
+                    {student.percentage}
+                  </td>
+                </tr>
+              ))}
+
+              {/* <!-- className two --> */}
+              <tr className="bg-white/5">
+                <td className="p-5 text-sm md:text-xl" colSpan="4">
+                  Class Two
+                </td>
+              </tr>
+              {studentData?.class2?.map(student => (
+                <tr key={student.id} className="border-b border-[#7ECEB529]">
+                  <td className="p-5 text-sm md:text-xl">{student.id}</td>
+                  <td className="p-5 text-sm md:text-xl">
+                    <div className="flex space-x-3 items-center">
+                      <img
+                        className="w-8 h-8 rounded-full"
+                        src={student.image}
+                        width="32"
+                        height="32"
+                        alt="John Smith"
+                      />
+                      <span className="whitespace-nowrap">{student.name}</span>
+                    </div>
+                  </td>
+                  <td className="p-5 text-sm md:text-xl text-center">
+                    {student.score}
+                  </td>
+                  <td className="p-5 text-sm md:text-xl text-center">
+                    {student.percentage}
+                  </td>
+                </tr>
+              ))}
+              {/* <!-- className Three --> */}
+              <tr className="bg-white/5">
+                <td className="p-5 text-sm md:text-xl" colSpan="4">
+                  Class Three
+                </td>
+              </tr>
+              {studentData?.class3?.map(student => (
+                <tr key={student.id} className="border-b border-[#7ECEB529]">
+                  <td className="p-5 text-sm md:text-xl">{student.id}</td>
+                  <td className="p-5 text-sm md:text-xl">
+                    <div className="flex space-x-3 items-center">
+                      <img
+                        className="w-8 h-8 rounded-full"
+                        src={student.image}
+                        width="32"
+                        height="32"
+                        alt="John Smith"
+                      />
+                      <span className="whitespace-nowrap">{student.name}</span>
+                    </div>
+                  </td>
+                  <td className="p-5 text-sm md:text-xl text-center">
+                    {student.score}
+                  </td>
+                  <td className="p-5 text-sm md:text-xl text-center">
+                    {student.percentage}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       </div>
-      <div className="max-w-[848px] mx-auto overflow-auto text-white">
-        <table className="w-full">
-          <thead>
-            <tr className="border-b border-[#FFFFFF0D]">
-              <th className="uppercase p-5 text-sm md:text-xl font-semibold md:min-w-[110px] text-left">
-                ID
-              </th>
-              <th className="p-5 text-sm md:text-xl font-semibold text-left">
-                Name
-              </th>
-              <th className="p-5 text-sm md:text-xl font-semibold">Scores</th>
-              <th className="p-5 text-sm md:text-xl font-semibold">
-                Percentage
-              </th>
-            </tr>
-          </thead>
-          <tr className="bg-[#232d32]">
-            <td className="p-5 text-sm md:text-xl">Class One</td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          {studentData.class1?.map(student => (
-            <tbody key={student.id}>
-              <tr className="bg-white/5"></tr>
-              <tr className="border-b border-[#7ECEB529]">
-                <td className="p-5 text-sm md:text-xl">{student.id}</td>
-                <td className="p-5 text-sm md:text-xl">
-                  <div className="flex space-x-3 items-center">
-                    <img
-                      className="w-8 h-8 rounded-full"
-                      src={student.image}
-                      width="32"
-                      height="32"
-                      alt="John Smith"
-                    />
-                    <span className="whitespace-nowrap">{student.name}</span>
-                  </div>
-                </td>
-                <td className="p-5 text-sm md:text-xl text-center">
-                  {student.score}
-                </td>
-                <td className="p-5 text-sm md:text-xl text-center">
-                  {student.percentage}
-                </td>
-              </tr>
-            </tbody>
-          ))}
-          <tr className="bg-[#232d32]">
-            <td className="p-5 text-sm md:text-xl">Class Two</td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          {studentData.class2?.map(student => (
-            <tbody key={student.id}>
-              <tr className="bg-white/5"></tr>
-              <tr className="border-b border-[#7ECEB529]">
-                <td className="p-5 text-sm md:text-xl">{student.id}</td>
-                <td className="p-5 text-sm md:text-xl">
-                  <div className="flex space-x-3 items-center">
-                    <img
-                      className="w-8 h-8 rounded-full"
-                      src={student.image}
-                      width="32"
-                      height="32"
-                      alt="John Smith"
-                    />
-                    <span className="whitespace-nowrap">{student.name}</span>
-                  </div>
-                </td>
-                <td className="p-5 text-sm md:text-xl text-center">
-                  {student.score}
-                </td>
-                <td className="p-5 text-sm md:text-xl text-center">
-                  {student.percentage}
-                </td>
-              </tr>
-            </tbody>
-          ))}
-          <tr className="bg-[#232d32]">
-            <td className="p-5 text-sm md:text-xl">Class Three</td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          {studentData.class3?.map(student => (
-            <tbody key={student.id}>
-              <tr className="bg-white/5"></tr>
-              <tr className="border-b border-[#7ECEB529]">
-                <td className="p-5 text-sm md:text-xl">{student.id}</td>
-                <td className="p-5 text-sm md:text-xl">
-                  <div className="flex space-x-3 items-center">
-                    <img
-                      className="w-8 h-8 rounded-full"
-                      src={student.image}
-                      width="32"
-                      height="32"
-                      alt="John Smith"
-                    />
-                    <span className="whitespace-nowrap">{student.name}</span>
-                  </div>
-                </td>
-                <td className="p-5 text-sm md:text-xl text-center">
-                  {student.score}
-                </td>
-                <td className="p-5 text-sm md:text-xl text-center">
-                  {student.percentage}
-                </td>
-              </tr>
-            </tbody>
-          ))}
-        </table>
-      </div>
-    </div>
+    </section>
   );
 };
 
