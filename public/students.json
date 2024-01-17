@@ -1,0 +1,218 @@
+{
+  "class1": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "score": "A",
+      "percentage": 85.5,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_aRcAObtQMLMUJk22vVTCGs30ZfqQ0X1fTEojTUpn2iEp1DJ30pykeEXI-cOIg_RaaFE&usqp=CAU"
+    },
+    {
+      "id": 2,
+      "name": "Alice Smith",
+      "score": "A+",
+      "percentage": 92.3,
+      "image": "https://www.mylaporetimes.com/wp-content/uploads/2022/04/MT-GCC-BOY.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Bob Johnson",
+      "score": "A-",
+      "percentage": 78.8,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTawROY04cAtK9FEJg42nDCMjcdz5opxzHvQTZyPl_J1xEkIRQ98_vYiWn9RfCZL9F4Qoo&usqp=CAU"
+    },
+    {
+      "id": 4,
+      "name": "Emma White",
+      "score": "A+",
+      "percentage": 96.2,
+      "image": "https://www.somervillenoida.in/images/topper2022_23/1.%20ISHMEET%20KAUR%20(99.4).jpg"
+    },
+    {
+      "id": 5,
+      "name": "Michael Brown",
+      "score": "A",
+      "percentage": 87.4,
+      "image": "https://www.somervillenoida.in/images/topper2022_23/YASH%20SAH%20(98.6).jpg"
+    },
+    {
+      "id": 6,
+      "name": "Olivia Davis",
+      "score": "A",
+      "percentage": 89.1,
+      "image": "https://www.somervillenoida.in/images/topper2022_23/2.%20ISHAAN%20RAINA%20(99).jpg"
+    },
+    {
+      "id": 7,
+      "name": "William Miller",
+      "score": "A-",
+      "percentage": 76.5,
+      "image": "https://shollaschoolcollege.edu.bd/front/img/students/5d5fc37d5586656.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Sophia Wilson",
+      "score": "A+",
+      "percentage": 94.7,
+      "image": "https://shollaschoolcollege.edu.bd/front/img/students/5cb41981a80151.JPG"
+    },
+    {
+      "id": 9,
+      "name": "James Taylor",
+      "score": "A-",
+      "percentage": 82.2,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOAG-myjypgHvc9sLM9U9RmQZWoTB5MGEXQItMdvhEMgLxMbK157PiZXDlVAra3-tDQ7A&usqp=CAU"
+    },
+    {
+      "id": 10,
+      "name": "Ella Anderson",
+      "score": "A+",
+      "percentage": 91.8,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZvZ4jDZwV5jIAe9WMp6xz9Rhc80pdf7HYwJk6_3quRBGu0zz9wFheO_4U4LAtHzNDJGc&usqp=CAU"
+    }
+  ],
+  "class2": [
+    {
+      "id": 1,
+      "name": "Liam Johnson",
+      "score": "A",
+      "percentage": 88.6,
+      "image": "liam_johnson.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Ava Davis",
+      "score": "A-",
+      "percentage": 79.3,
+      "image": "ava_davis.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Noah Williams",
+      "score": "A+",
+      "percentage": 95.1,
+      "image": "noah_williams.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Sophie Brown",
+      "score": "A",
+      "percentage": 83.7,
+      "image": "sophie_brown.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Jackson Taylor",
+      "score": "A",
+      "percentage": 90.4,
+      "image": "jackson_taylor.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Aria Wilson",
+      "score": "A-",
+      "percentage": 77.9,
+      "image": "aria_wilson.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Logan White",
+      "score": "A+",
+      "percentage": 93.2,
+      "image": "logan_white.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Mia Miller",
+      "score": "A",
+      "percentage": 86.4,
+      "image": "mia_miller.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Ethan Anderson",
+      "score": "A-",
+      "percentage": 81.8,
+      "image": "ethan_anderson.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Grace Smith",
+      "score": "A+",
+      "percentage": 97.0,
+      "image": "grace_smith.jpg"
+    }
+  ],
+  "class3": [
+    {
+      "id": 1,
+      "name": "Mason Davis",
+      "score": "A",
+      "percentage": 84.3,
+      "image": "mason_davis.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Chloe Wilson",
+      "score": "A+",
+      "percentage": 91.2,
+      "image": "chloe_wilson.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Carter Brown",
+      "score": "A",
+      "percentage": 89.6,
+      "image": "carter_brown.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Ella Miller",
+      "score": "A-",
+      "percentage": 75.9,
+      "image": "ella_miller.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Lily Johnson",
+      "score": "A+",
+      "percentage": 92.7,
+      "image": "lily_johnson.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Benjamin White",
+      "score": "A-",
+      "percentage": 78.4,
+      "image": "benjamin_white.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Aiden Taylor",
+      "score": "A+",
+      "percentage": 94.1,
+      "image": "aiden_taylor.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Madison Smith",
+      "score": "A",
+      "percentage": 86.8,
+      "image": "madison_smith.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Lucas Anderson",
+      "score": "A+",
+      "percentage": 97.3,
+      "image": "lucas_anderson.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Avery Wilson",
+      "score": "A-",
+      "percentage": 80.5,
+      "image": "avery_wilson.jpg"
+    }
+  ]
+}
