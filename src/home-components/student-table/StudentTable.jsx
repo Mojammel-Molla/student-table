@@ -19,7 +19,7 @@ const StudentTable = () => {
 
         <form>
           <input
-            className="rounded-full h-10 my-8 p-4 min-w-1/4"
+            className="rounded-full h-10 my-8 p-4 w-1/4 min-w-2/4"
             placeholder="Search by Student"
             type="text"
           />
